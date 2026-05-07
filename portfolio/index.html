@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeyad Magdy | Accountant Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">ZM</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">ZM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+        <button id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">Available for Work</div>
+      <h1 class="hero-title reveal-up">
+        Hi, I'm <span class="gradient-text" id="typed-name"></span>
+      </h1>
+      <div class="hero-subtitle reveal-up">
+        <span id="typed-role"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        Ambitious accounting professional with hands-on experience in financial statements,
+        tax reporting, ERP systems, and construction accounting. Based in Arish, Egypt.
+      </p>
+      <div class="hero-buttons reveal-up">
+        <a href="#experience" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Experience</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">Years Exp</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">Companies</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">Diplomas</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="avatar-ring">
+        <div class="avatar-glow"></div>
+        <div class="avatar-circle">
+          <span class="avatar-initials">ZM</span>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+      </div>
+      <div class="floating-card card-1 glass">
+        <i class="fas fa-chart-line"></i>
+        <span>Financial Reporting</span>
+      </div>
+      <div class="floating-card card-2 glass">
+        <i class="fas fa-calculator"></i>
+        <span>Tax Accounting</span>
+      </div>
+      <div class="floating-card card-3 glass">
+        <i class="fas fa-database"></i>
+        <span>ERP Systems</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-lead">
+            I'm a final-year Commerce student majoring in Accounting at El Arish University,
+            with real-world experience working at a legal accounting office and a construction company.
+          </p>
+          <p>
+            I specialize in preparing financial statements, managing daily journal entries, handling
+            tax returns, and working with accounting software including Excel, Al-Mohtaseb, Oracle ERP,
+            Odoo, Peachtree, and QuickBooks.
+          </p>
+          <p>
+            My goal is to grow into a senior accounting role where I can apply Egyptian Accounting
+            Standards and modern ERP tools to drive financial accuracy and business insight.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Arish, Egypt</span></div>
+            <div class="info-item"><i class="fas fa-envelope"></i><span>zmjdy679@gmail.com</span></div>
+            <div class="info-item"><i class="fas fa-phone"></i><span>01098961647</span></div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i><span>BSc Commerce 2022–2026</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-2"><i class="fas fa-download"></i> Get In Touch</a>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="about-card glass">
+            <div class="about-card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h3>Financial Accounting</h3>
+            <p>Trial balances, financial statements, journal entries per Egyptian Accounting Standards.</p>
+          </div>
+          <div class="about-card glass">
+            <div class="about-card-icon"><i class="fas fa-landmark"></i></div>
+            <h3>Tax Reporting</h3>
+            <p>VAT, commercial & industrial tax returns, compliance with Egyptian tax regulations.</p>
+          </div>
+          <div class="about-card glass">
+            <div class="about-card-icon"><i class="fas fa-hard-hat"></i></div>
+            <h3>Construction Accounting</h3>
+            <p>Project-based accounting, fixed assets, depreciation, multi-project invoicing.</p>
+          </div>
+          <div class="about-card glass">
+            <div class="about-card-icon"><i class="fas fa-server"></i></div>
+            <h3>ERP Systems</h3>
+            <p>Oracle ERP, Odoo, Peachtree, QuickBooks, Al-Mohtaseb, Excel-based accounting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid reveal-up">
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+          <h4>Microsoft Excel</h4>
+          <p>Advanced formulas, pivot tables, financial modeling</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+          <h4>Al-Mohtaseb</h4>
+          <p>Full accounting cycle, reports, ledgers</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>Oracle ERP</h4>
+          <p>Financial modules, GL, AP/AR management</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <h4>Odoo ERP</h4>
+          <p>Financial accounting, invoicing, reporting</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-book"></i></div>
+          <h4>QuickBooks</h4>
+          <p>Bookkeeping, payroll, financial reports</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-tree"></i></div>
+          <h4>Peachtree</h4>
+          <p>Accounting entries, inventory, reporting</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="76"></div></div>
+          <span class="skill-pct">76%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-receipt"></i></div>
+          <h4>Tax Accounting</h4>
+          <p>VAT, commercial & industrial tax returns</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+          <h4>Financial Statements</h4>
+          <p>Balance sheet, P&L, trial balance, EAS</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon"><i class="fas fa-users"></i></div>
+          <h4>Soft Skills</h4>
+          <p>Teamwork, communication, time management</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          <span class="skill-pct">95%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Experience & Education</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3>Accountant</h3>
+                <span class="timeline-company">Qubaa Construction Company</span>
+              </div>
+              <span class="timeline-date">Jan 2024 – Present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Managing day-to-day accounting operations for construction projects</li>
+              <li>Preparing financial statements and trial balances per Egyptian Accounting Standards</li>
+              <li>Handling invoices, payments, and receipts for multiple projects</li>
+              <li>Maintaining accurate records of fixed assets and depreciation</li>
+              <li>Assisting in VAT, commercial, and industrial tax reporting</li>
+              <li>Using Excel and accounting software for efficient financial management</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Excel</span><span>EAS</span><span>Tax</span><span>Fixed Assets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i class="fas fa-balance-scale"></i></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3>Accountant</h3>
+                <span class="timeline-company">Legal Accountant Office – Tarek Mohamed Mousa</span>
+              </div>
+              <span class="timeline-date">Jan 2023 – Dec 2023</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Prepared daily journal entries and recorded accounting transactions</li>
+              <li>Handled purchasing, sales, supplier payments, and customer collections</li>
+              <li>Recorded fixed assets and calculated depreciation</li>
+              <li>Prepared tax returns and assisted in financial reviews</li>
+              <li>Prepared trial balance and financial statements per Egyptian Accounting Standards</li>
+              <li>Worked using Excel and Al-Mohtaseb accounting software</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Al-Mohtaseb</span><span>Excel</span><span>Journal Entries</span><span>Tax Returns</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3>BSc in Commerce – Accounting</h3>
+                <span class="timeline-company">El Arish University</span>
+              </div>
+              <span class="timeline-date">2022 – 2026</span>
+            </div>
+            <p>Final-year student majoring in Accounting. Studying financial accounting, auditing, cost accounting, taxation, and business law.</p>
+            <div class="timeline-tags">
+              <span>Accounting</span><span>Finance</span><span>Auditing</span><span>Taxation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Certificates</span>
+        <h2 class="section-title">Professional Credentials</h2>
+      </div>
+      <div class="cert-grid reveal-up">
+        <div class="cert-card glass">
+          <div class="cert-badge"><i class="fas fa-award"></i></div>
+          <div class="cert-year">2024</div>
+          <h3>Professional Financial Accountant Diploma</h3>
+          <span class="cert-issuer">EG-Trainers Corporation</span>
+          <p>Financial Accounting · Taxes · Construction Accounting · Excel Accounting · Oracle ERP · Peachtree · QuickBooks</p>
+          <div class="cert-tags">
+            <span>PFAD</span><span>Oracle ERP</span><span>QuickBooks</span>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-badge"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-year">2024</div>
+          <h3>Electronic Accounting Diploma</h3>
+          <span class="cert-issuer">EG-Trainers Corporation</span>
+          <p>Accounting using Excel · Odoo Financial ERP · Peachtree · QuickBooks</p>
+          <div class="cert-tags">
+            <span>EAD</span><span>Odoo ERP</span><span>Peachtree</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-sub">Have an opportunity or want to connect? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item glass">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:zmjdy679@gmail.com">zmjdy679@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+201098961647">01098961647</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <span>Arish, North Sinai, Egypt</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="mailto:zmjdy679@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+201098961647" class="social-btn" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="contact-form glass reveal-right" id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="form-success" class="form-success hidden">
+            <i class="fas fa-check-circle"></i> Message sent successfully!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">ZM<span class="dot">.</span></span>
+        <p>© 2024 Zeyad Magdy. All rights reserved.</p>
+        <p class="footer-sub">Accountant · Arish, Egypt</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
