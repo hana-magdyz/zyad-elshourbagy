@@ -70,7 +70,7 @@ document.getElementById('back-to-top').addEventListener('click', () => {
 function startTyping() {
   const nameEl = document.getElementById('typed-name');
   const roleEl = document.getElementById('typed-role');
-  const name = 'Zeyad Magdy';
+  const name = 'Zyad El Shourbagy';
   const roles = ['Financial Accountant', 'ERP Specialist', 'Tax Consultant', 'Commerce Graduate'];
   let nameIdx = 0, roleIdx = 0, charIdx = 0, deleting = false;
 
